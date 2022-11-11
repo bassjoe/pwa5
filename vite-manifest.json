@@ -1,0 +1,137 @@
+{
+  "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
+    "file": "_app/immutable/start-f6d0b0a4.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-12e0e857.js",
+      "_singletons-8a6e1575.js",
+      "_preload-helper-b21cceae.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/generated/nodes/0.js",
+      ".svelte-kit/generated/nodes/1.js",
+      ".svelte-kit/generated/nodes/2.js"
+    ]
+  },
+  "src/routes/+layout.svelte": {
+    "file": "_app/immutable/components/pages/_layout.svelte-5fb3a4f6.js",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_preload-helper-b21cceae.js",
+      "_index-12e0e857.js"
+    ],
+    "dynamicImports": [
+      "src/lib/ReloadPrompt.svelte",
+      "../../../../../@vite-plugin-pwa/virtual:pwa-register"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "_app/immutable/components/error.svelte-c77946b0.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-12e0e857.js",
+      "_singletons-8a6e1575.js"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "_app/immutable/components/pages/_page.svelte-b6623474.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-12e0e857.js"
+    ]
+  },
+  "src/routes/+layout.js": {
+    "file": "_app/immutable/modules/pages/_layout.js-7b9cbfbc.js",
+    "src": "src/routes/+layout.js",
+    "isEntry": true,
+    "imports": [
+      "__layout-8d2a742b.js"
+    ]
+  },
+  "_singletons-8a6e1575.js": {
+    "file": "_app/immutable/chunks/singletons-8a6e1575.js",
+    "imports": [
+      "_index-7069d68b.js"
+    ]
+  },
+  "_index-12e0e857.js": {
+    "file": "_app/immutable/chunks/index-12e0e857.js"
+  },
+  "_index-7069d68b.js": {
+    "file": "_app/immutable/chunks/index-7069d68b.js",
+    "imports": [
+      "_index-12e0e857.js"
+    ]
+  },
+  "_preload-helper-b21cceae.js": {
+    "file": "_app/immutable/chunks/preload-helper-b21cceae.js"
+  },
+  "__layout-8d2a742b.js": {
+    "file": "_app/immutable/chunks/_layout-8d2a742b.js"
+  },
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "_app/immutable/chunks/0-9b34b11a.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__layout-8d2a742b.js",
+      "src/routes/+layout.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-f5544f99.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/2.js": {
+    "file": "_app/immutable/chunks/2-a4c11611.js",
+    "src": ".svelte-kit/generated/nodes/2.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+page.svelte"
+    ]
+  },
+  "src/lib/ReloadPrompt.svelte": {
+    "file": "_app/immutable/chunks/ReloadPrompt-90bc3cf2.js",
+    "src": "src/lib/ReloadPrompt.svelte",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-12e0e857.js",
+      "_preload-helper-b21cceae.js",
+      "_index-7069d68b.js"
+    ],
+    "dynamicImports": [
+      "node_modules/workbox-window/build/workbox-window.prod.es5.mjs"
+    ],
+    "css": [
+      "_app/immutable/assets/ReloadPrompt-8b6f04a5.css"
+    ]
+  },
+  "../../../../../@vite-plugin-pwa/virtual:pwa-register": {
+    "file": "_app/immutable/chunks/virtual_pwa-register-cef01f95.js",
+    "src": "../../../../../@vite-plugin-pwa/virtual:pwa-register",
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-b21cceae.js"
+    ],
+    "dynamicImports": [
+      "node_modules/workbox-window/build/workbox-window.prod.es5.mjs"
+    ]
+  },
+  "node_modules/workbox-window/build/workbox-window.prod.es5.mjs": {
+    "file": "_app/immutable/chunks/workbox-window.prod.es5-5729c1a5.js",
+    "src": "node_modules/workbox-window/build/workbox-window.prod.es5.mjs",
+    "isDynamicEntry": true
+  },
+  "src/lib/ReloadPrompt.css": {
+    "file": "_app/immutable/assets/ReloadPrompt-8b6f04a5.css",
+    "src": "src/lib/ReloadPrompt.css"
+  }
+}
