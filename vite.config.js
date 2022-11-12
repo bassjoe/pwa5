@@ -1,5 +1,6 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { SvelteKitPWA } from '@vite-pwa/sveltekit';
+import preprocess from "svelte-preprocess";
 
 const config = {
 	plugins: [
@@ -30,7 +31,12 @@ const config = {
 				]
 			}
 		})
-	]
+	],
+	preprocess: [
+		preprocess({
+			postcss: true,
+		}),
+	],
 };
 
 export default config;

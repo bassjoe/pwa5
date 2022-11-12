@@ -1,13 +1,15 @@
 <script>
-  import { onMount } from 'svelte'
-  import { pwaInfo } from 'virtual:pwa-info'
+  import { onMount } from "svelte";
+  import { pwaInfo } from "virtual:pwa-info";
+  import "../app.css";
+  import Header from "$lib/components/Header.svelte";
 
   let ReloadPrompt;
 
   onMount(async () => {
     if (pwaInfo) {
-      ReloadPrompt = (await import('$lib/ReloadPrompt.svelte')).default
-      const { registerSW } = await import('virtual:pwa-register')
+      ReloadPrompt = (await import("$lib/ReloadPrompt.svelte")).default;
+      const { registerSW } = await import("virtual:pwa-register");
       registerSW({
         immediate: true,
         onRegistered(r) {
@@ -16,27 +18,27 @@
           //    console.log('Checking for sw update')
           //    r.update()
           // }, 20000 /* 20s for testing purposes */)
-          console.log(`SW Registered: ${r}`)
+          console.log(`SW Registered: ${r}`);
         },
         onRegisterError(error) {
-          console.log('SW registration error', error)
-        }
-      })
+          console.log("SW registration error", error);
+        },
+      });
     }
-  })
-  
-  $: webManifest = pwaInfo ? pwaInfo.webManifest.linkTag : ''
+  });
+
+  $: webManifest = pwaInfo ? pwaInfo.webManifest.linkTag : "";
 </script>
 
 <svelte:head>
-    {@html webManifest}
+  {@html webManifest}
 </svelte:head>
 
-<main>
-  <slot />
-</main>
+<div class="bg-slate-100 h-screen">
+  <Header />
+  <main><slot /></main>
+</div>
 
 {#if ReloadPrompt}
   <svelte:component this={ReloadPrompt} />
 {/if}
-
