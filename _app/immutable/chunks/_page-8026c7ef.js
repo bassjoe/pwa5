@@ -1,0 +1,1 @@
+function e(){return{title:"Hello world!",content:"<b>Welcome</b>, what's up?"}}const t=Object.freeze(Object.defineProperty({__proto__:null,load:e},Symbol.toStringTag,{value:"Module"}));export{t as _,e as l};
