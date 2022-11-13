@@ -2,7 +2,7 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import { SvelteKitPWA } from '@vite-pwa/sveltekit';
 import preprocess from "svelte-preprocess";
 
-const base = process.env.MYPWA_BASE ? `/${process.env.MYPWA_BASE}/` : '/';
+const base = process.env.MYPWA_BASE ? `${process.env.MYPWA_BASE}/` : '/';
 
 const config = {
 	plugins: [
