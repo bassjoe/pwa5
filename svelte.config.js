@@ -6,7 +6,8 @@ const config = {
 		adapter: adapter(),
 		paths: {
 			base: '/pwa5'
-		}
+		},
+		trailingSlash: 'always',
 	}
 };
 
