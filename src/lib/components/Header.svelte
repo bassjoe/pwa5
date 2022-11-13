@@ -8,4 +8,5 @@
     <a href="{base || '/'}" class:nav-active-route={$page.url.pathname === `${base || '/'}` || $page.url.pathname === `${base}/`}>Home</a>
     <a href="{base}/about"  class:nav-active-route={$page.url.pathname === `${base}/about`}>About</a>
     <a href="{base}/sign-up"  class:nav-active-route={$page.url.pathname === `${base}/sign-up`}>Sign up</a>
+    <div>{base} ### {$page.url.pathname === `${base || '/'}`} ### {$page.url.pathname === `${base}/`}</div>
 </nav>
