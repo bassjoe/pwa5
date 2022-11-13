@@ -5,7 +5,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			base: '/pwa5'
+			base: process.env.MYPWA_BASE || '',
 		},
 		trailingSlash: 'always',
 	}
