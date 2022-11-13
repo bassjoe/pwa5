@@ -31,6 +31,10 @@ const config = {
 				]
 			},
 			trailingSlash: 'never',
+			registerType: 'autoUpdate',
+			workbox: {
+				globPatterns: ['/', '**/*.{js,css,html,ico,png,svg}']
+			}
 		})
 	],
 	preprocess: [
