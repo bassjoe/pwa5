@@ -30,7 +30,7 @@ const config = {
 					}
 				]
 			},
-			trailingSlash: 'never',
+			//trailingSlash: 'never',
 			registerType: 'autoUpdate',
 			workbox: {
 				globPatterns: ['/', '**/*.{js,css,html,ico,png,svg}']
