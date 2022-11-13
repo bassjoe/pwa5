@@ -1,10 +1,11 @@
 <script>
     import { page } from '$app/stores';
+    import { base } from '$app/paths';
 </script>
 
 <nav class="flex justify-center gap-16 p-4">
     <p>Current URL: {$page.url.pathname}</p>
-    <a href="/" class:nav-active-route={$page.url.pathname === '/'}>Home</a>
-    <a href="/about"  class:nav-active-route={$page.url.pathname === '/about'}>About</a>
-    <a href="/sign-up"  class:nav-active-route={$page.url.pathname === '/sign-up'}>Sign up</a>
+    <a href="{base || '/'}" class:nav-active-route={$page.url.pathname === `${base || '/'}`}>Home</a>
+    <a href="{base}/about"  class:nav-active-route={$page.url.pathname === `${base}/about`}>About</a>
+    <a href="{base}/sign-up"  class:nav-active-route={$page.url.pathname === `${base}/sign-up`}>Sign up</a>
 </nav>

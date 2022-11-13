@@ -36,7 +36,9 @@
 
 <div class="bg-slate-100 h-screen">
   <Header />
-  <main><slot /></main>
+  <div class="max-w-max mx-auto">
+    <main><slot /></main>
+  </div>
 </div>
 
 {#if ReloadPrompt}
