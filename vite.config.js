@@ -35,7 +35,6 @@ const config = {
 			registerType: 'autoUpdate',
 			workbox: {
 				globPatterns: [
-					base === '/' ? base : `${base}/`,
 					'**/*.{js,css,html,ico,png,svg}',
 				]
 			}
