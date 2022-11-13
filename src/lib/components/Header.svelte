@@ -5,7 +5,7 @@
 
 <nav class="flex justify-center gap-16 p-4">
     <p>Current URL: {$page.url.pathname}</p>
-    <a href="{base || '/'}" class:nav-active-route={$page.url.pathname === `${base || base + '/'}`}>Home</a>
+    <a href="{base || '/'}" class:nav-active-route={$page.url.pathname === `${base || '/'}` || $page.url.pathname === `${base}/`}>Home</a>
     <a href="{base}/about"  class:nav-active-route={$page.url.pathname === `${base}/about`}>About</a>
     <a href="{base}/sign-up"  class:nav-active-route={$page.url.pathname === `${base}/sign-up`}>Sign up</a>
 </nav>
