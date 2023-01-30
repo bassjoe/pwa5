@@ -7,7 +7,6 @@ const config = {
 		paths: {
 			base: process.env.MYPWA_BASE || '',
 		},
-		trailingSlash: 'always',
 	}
 };
 
