@@ -9,7 +9,7 @@ const config = {
 		sveltekit(),
 		SvelteKitPWA({
 			includeAssets: ['favicon.ico', 'icon-192.png', 'icon-512.png'],
-			base: base,
+			base: base + '/',
 			scope: base,
 			manifest: {
 				name: 'pwa5-n',
