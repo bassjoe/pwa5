@@ -2,23 +2,24 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="/pwa5/favicon.png" />
-		<link rel="apple-touch-icon" href="/pwa5/icon-192.png">
+		<link rel="icon" href="../favicon.png" />
+		<link rel="apple-touch-icon" href="../icon-192.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="theme-color" content="darkturquoise">
 		<meta name="description" content="This is PWA #5.">
 		<meta http-equiv="content-security-policy" content="">
-		<link href="/pwa5/_app/immutable/assets/_layout-ad4e4cfb.css" rel="stylesheet">
-		<link href="/pwa5/_app/immutable/assets/ReloadPrompt-8b6f04a5.css" rel="stylesheet">
-		<link rel="modulepreload" href="/pwa5/_app/immutable/start-b823638f.js">
-		<link rel="modulepreload" href="/pwa5/_app/immutable/chunks/index-9ecbaa1c.js">
-		<link rel="modulepreload" href="/pwa5/_app/immutable/chunks/singletons-837341a7.js">
-		<link rel="modulepreload" href="/pwa5/_app/immutable/chunks/preload-helper-41c905a7.js">
-		<link rel="modulepreload" href="/pwa5/_app/immutable/components/pages/_layout.svelte-d2f03521.js">
-		<link rel="modulepreload" href="/pwa5/_app/immutable/chunks/stores-7cb7ad72.js">
-		<link rel="modulepreload" href="/pwa5/_app/immutable/modules/pages/_layout.js-5612100c.js">
-		<link rel="modulepreload" href="/pwa5/_app/immutable/chunks/_layout-79cb23d1.js">
-		<link rel="modulepreload" href="/pwa5/_app/immutable/components/pages/sign-up/_page.svelte-6d76f77a.js"><!-- HEAD_svelte-13srx9e_START --><!-- HTML_TAG_START --><link rel="manifest" href="/pwa5/manifest.webmanifest"><!-- HTML_TAG_END --><!-- HEAD_svelte-13srx9e_END -->
+		<link href="../_app/immutable/assets/_layout.ad4e4cfb.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/ReloadPrompt.8b6f04a5.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.26459731.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.17e9b1a2.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.b2d7985b.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.a33ffd3a.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.7690ce9c.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.3b5e5120.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.js.822e9be0.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout.79cb23d1.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/sign-up-page.svelte.da46dc62.js"><!-- HEAD_svelte-13srx9e_START --><!-- HTML_TAG_START --><link rel="manifest" href="/pwa5/manifest.webmanifest"><!-- HTML_TAG_END --><!-- HEAD_svelte-13srx9e_END -->
 	</head>
 	<body>
 		<div>
@@ -35,22 +36,31 @@
 
 
 
-		<script type="module" data-sveltekit-hydrate="1xchszp">
-			import { start } from "/pwa5/_app/immutable/start-b823638f.js";
+			
+			<script>
+				{
+					__sveltekit_16agjh4 = {
+						env: {},
+						assets: "/pwa5",
+						base: new URL("..", location).pathname.slice(0, -1),
+						element: document.currentScript.parentElement
+					};
 
-			start({
-				env: {},
-				paths: {"assets":"/pwa5","base":"/pwa5"},
-				target: document.querySelector('[data-sveltekit-hydrate="1xchszp"]').parentNode,
-				version: "1675362564902",
-				hydrate: {
-					node_ids: [0, 4],
-					data: [null,null],
-					form: null,
-					error: null
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.26459731.js"),
+						import("../_app/immutable/entry/app.a33ffd3a.js")
+					]).then(([kit, app]) => {
+						kit.start(app, __sveltekit_16agjh4.element, {
+							node_ids: [0, 4],
+							data,
+							form: null,
+							error: null
+						});
+					});
 				}
-			});
-		</script>
-	</div>
+			</script>
+		</div>
 	</body>
 </html>
