@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^1.0.6",
-    "@sveltejs/kit": "^1.15.4",
+    "@sveltejs/kit": "^1.16.2",
     "@vite-pwa/sveltekit": "^0.1.3",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
